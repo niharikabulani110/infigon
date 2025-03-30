@@ -1,10 +1,17 @@
 import SideNavigation from '../../components/SideNavigation';
+import { useState } from 'react';
 
 export default function PersonalityTestLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  const [expandedSection, setExpandedSection] = useState(1);
+
+  const toggleSection = (sectionNumber: number) => {
+    setExpandedSection(sectionNumber);
+  };
+
   return (
     <div className="min-h-screen bg-white">
       <div className="max-w-7xl mx-auto px-8 bg-white">
@@ -69,7 +76,7 @@ export default function PersonalityTestLayout({
         <div className="flex gap-16 bg-white">
           {/* Side Navigation */}
           <aside className="w-[280px] bg-white">
-            <SideNavigation />
+            <SideNavigation expandedSection={expandedSection} toggleSection={toggleSection} />
           </aside>
 
           {/* Main Content */}
