@@ -1,5 +1,3 @@
-import { COLORS } from '@/constants/personality';
-
 /**
  * Header component that displays the main title and career counselor section
  */

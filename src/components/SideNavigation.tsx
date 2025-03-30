@@ -179,7 +179,7 @@ export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigatio
             <div className="p-4 w-full bg-white rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
               <div className="flex items-center gap-3">
                 <div className="w-6 h-6 flex-shrink-0">
-                  <Image src="/icons/career.png" alt="Career" width={24} height={24} />
+                  <Image src="/icons/career-icon.png" alt="Career" width={24} height={24} />
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-[#666666] mb-0.5">TEST 3</div>
@@ -217,7 +217,7 @@ export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigatio
             <div className="p-4 w-full bg-white rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
               <div className="flex items-center gap-3">
                 <div className="w-6 h-6 flex-shrink-0">
-                  <Image src="/icons/emotional.png" alt="Emotional" width={24} height={24} />
+                  <Image src="/icons/emotional-icon.png" alt="Emotional" width={24} height={24} />
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-[#666666] mb-0.5">TEST 4</div>
@@ -255,7 +255,7 @@ export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigatio
             <div className="p-4 w-full bg-white rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
               <div className="flex items-center gap-3">
                 <div className="w-6 h-6 flex-shrink-0">
-                  <Image src="/icons/learning.png" alt="Learning" width={24} height={24} />
+                  <Image src="/icons/learning-icon.png" alt="Learning" width={24} height={24} />
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-[#666666] mb-0.5">TEST 5</div>

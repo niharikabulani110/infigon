@@ -1,7 +1,5 @@
 'use client';
 
-import Image from "next/image";
-import Link from 'next/link';
 import { useState } from 'react';
 import { SideNavigation } from '@/components/SideNavigation';
 import { PersonalityTypeCard } from '@/components/PersonalityTypeCard';

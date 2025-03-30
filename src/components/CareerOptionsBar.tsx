@@ -1,5 +1,3 @@
-import { COLORS } from '@/constants/personality';
-
 interface CareerOption {
   rank: number;
   title: string;
