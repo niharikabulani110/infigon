@@ -105,7 +105,7 @@ export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigatio
             <div className="relative p-4 w-full bg-white rounded-lg shadow-[0px_1px_3px_rgba(0,0,0,0.1)] cursor-pointer hover:bg-gray-50 transition-colors">
               <div className="flex items-center gap-3">
                 <div className="w-6 h-6 flex-shrink-0">
-                  <Image src="/icons/brain.png" alt="Personality" width={24} height={24} />
+                  <Image src="/brain-icon.png" alt="Personality" width={24} height={24} />
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-[#666666] mb-0.5">TEST 1</div>
@@ -141,7 +141,7 @@ export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigatio
             <div className="p-4 w-full bg-white rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
               <div className="flex items-center gap-3">
                 <div className="w-6 h-6 flex-shrink-0">
-                  <Image src="/icons/interest.png" alt="Interest" width={24} height={24} />
+                  <Image src="/interest-icon.png" alt="Interest" width={24} height={24} />
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-[#666666] mb-0.5">TEST 2</div>
@@ -179,7 +179,7 @@ export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigatio
             <div className="p-4 w-full bg-white rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
               <div className="flex items-center gap-3">
                 <div className="w-6 h-6 flex-shrink-0">
-                  <Image src="/icons/career-icon.png" alt="Career" width={24} height={24} />
+                  <Image src="/career-icon.png" alt="Career" width={24} height={24} />
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-[#666666] mb-0.5">TEST 3</div>
@@ -217,7 +217,7 @@ export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigatio
             <div className="p-4 w-full bg-white rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
               <div className="flex items-center gap-3">
                 <div className="w-6 h-6 flex-shrink-0">
-                  <Image src="/icons/emotional-icon.png" alt="Emotional" width={24} height={24} />
+                  <Image src="/emotional-icon.png" alt="Emotional" width={24} height={24} />
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-[#666666] mb-0.5">TEST 4</div>
@@ -255,7 +255,7 @@ export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigatio
             <div className="p-4 w-full bg-white rounded-lg cursor-pointer hover:bg-gray-50 transition-colors">
               <div className="flex items-center gap-3">
                 <div className="w-6 h-6 flex-shrink-0">
-                  <Image src="/icons/learning-icon.png" alt="Learning" width={24} height={24} />
+                  <Image src="/learning-icon.png" alt="Learning" width={24} height={24} />
                 </div>
                 <div className="flex-1">
                   <div className="text-xs text-[#666666] mb-0.5">TEST 5</div>
