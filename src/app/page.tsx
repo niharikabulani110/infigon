@@ -170,6 +170,7 @@ export default function Home() {
           <main className="flex-1 bg-white">
             <div className="space-y-6">
               <h2 className="text-[24px] font-semibold">
+                <span className="text-[#0046FF]">Understanding </span>
                 <span className="text-[#0046FF]">Personality Types</span>
               </h2>
               
