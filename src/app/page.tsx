@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Navigation from '@/components/Navigation';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -84,7 +85,9 @@ export default function Home() {
                 </div>
                 <div className="mt-3 ml-[52px] space-y-2.5 pb-4">
                   <div className="text-[15px] text-[#1A1A1A] font-medium">Understanding Personality Explorer</div>
-                  <div className="text-[15px] text-[#666666]">Personality Types</div>
+                  <Link href="/personality-types" className="block">
+                    <div className="text-[15px] text-[#666666] hover:text-[#0046FF]">Personality Types</div>
+                  </Link>
                   <div className="text-[15px] text-[#666666]">Your Result</div>
                 </div>
               </div>
