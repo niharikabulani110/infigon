@@ -38,7 +38,7 @@ export default function PersonalityTypes() {
         </div>
 
         {/* Career Options Bar */}
-        <div className="border-t border-b border-[#E5E7EB] py-4 mb-8 bg-white">
+        <div className="py-4 bg-white">
           <div className="flex items-center justify-between bg-white">
             <div className="flex items-center bg-white">
               <div className="flex items-center bg-white">
@@ -50,15 +50,15 @@ export default function PersonalityTypes() {
               <div className="flex items-center gap-3 ml-6 bg-white">
                 <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#E5E7EB]">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#666666] text-white text-sm">1</span>
-                  <span className="text-[15px] text-[#666666]">Engineer</span>
+                  <span className="text-[12px] text-[#666666]">Engineer</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#E5E7EB]">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#666666] text-white text-sm">2</span>
-                  <span className="text-[15px] text-[#666666]">Doctor</span>
+                  <span className="text-[12px] text-[#666666]">Doctor</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#E5E7EB]">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#666666] text-white text-sm">3</span>
-                  <span className="text-[15px] text-[#666666]">Teacher</span>
+                  <span className="text-[12px] text-[#666666]">Teacher</span>
                 </div>
               </div>
             </div>
