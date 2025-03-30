@@ -1,3 +1,5 @@
+"use client";
+
 import SideNavigation from '../../components/SideNavigation';
 import { useState } from 'react';
 
