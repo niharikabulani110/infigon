@@ -88,7 +88,7 @@ interface SideNavigationProps {
   toggleSection: (sectionNumber: number) => void;
 }
 
-export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigationProps) => {
+export default function SideNavigation({ expandedSection, toggleSection }: SideNavigationProps) {
   const pathname = usePathname();
 
   return (
@@ -294,4 +294,4 @@ export const SideNavigation = ({ expandedSection, toggleSection }: SideNavigatio
       </div>
     </aside>
   );
-}; 
+} 

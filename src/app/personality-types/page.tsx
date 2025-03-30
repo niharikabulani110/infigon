@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { SideNavigation } from '@/components/SideNavigation';
+import SideNavigation from '@/components/SideNavigation';
 import { PersonalityTypeCard } from '@/components/PersonalityTypeCard';
 import { personalityTypes } from '@/data/personalityTypes';
 
