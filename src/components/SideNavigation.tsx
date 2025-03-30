@@ -1,87 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 import Image from "next/image";
-
-const tests = [
-  {
-    id: 1,
-    name: "Personality Explorer",
-    color: "#0046FF",
-    path: "/personality-test",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M15.5 14C14.7 14.5 13.9 15.5 13.9 16.5C13.9 17.1 14.1 17.6 14.3 18M8.5 14C9.3 14.5 10.1 15.5 10.1 16.5C10.1 17.1 9.9 17.6 9.7 18M12 16.5V18M12 8C13.1046 8 14 7.10457 14 6C14 4.89543 13.1046 4 12 4C10.8954 4 10 4.89543 10 6C10 7.10457 10.8954 8 12 8ZM21 12C21 13.1046 20.1046 14 19 14C17.8954 14 17 13.1046 17 12C17 10.8954 17.8954 10 19 10C20.1046 10 21 10.8954 21 12ZM7 12C7 13.1046 6.10457 14 5 14C3.89543 14 3 13.1046 3 12C3 10.8954 3.89543 10 5 10C6.10457 10 7 10.8954 7 12Z" stroke="#0046FF" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    ),
-    subItems: [
-      {
-        name: "Understanding Personality Explorer",
-        path: "/personality-test/understanding"
-      },
-      {
-        name: "Personality Types",
-        path: "/personality-test/personality-types"
-      },
-      {
-        name: "Your Result",
-        path: "/personality-test/result"
-      }
-    ]
-  },
-  {
-    id: 2,
-    name: "Interest Explorer",
-    color: "#22C55E",
-    path: "/interest-test",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="4" y="4" width="16" height="16" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M12 7L14 11.5L19 12L15.5 15.5L16.5 20L12 18L7.5 20L8.5 15.5L5 12L10 11.5L12 7Z" stroke="#22C55E" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    )
-  },
-  {
-    id: 3,
-    name: "Career Motivators",
-    color: "#F59E0B",
-    path: "/career-test",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 6H20V18H4V6Z" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M8 6V4H16V6" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M6 10H18" stroke="#F59E0B" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    )
-  },
-  {
-    id: 4,
-    name: "Emotional Intelligence",
-    color: "#3B82F6",
-    path: "/emotional-test",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M12 20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4C7.58172 4 4 7.58172 4 12C4 16.4183 7.58172 20 12 20Z" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M15 9C14.5 8.5 13.5 8 12 8" stroke="#3B82F6" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    )
-  },
-  {
-    id: 5,
-    name: "Learning Styles",
-    color: "#A855F7",
-    path: "/learning-test",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M4 4H20V20H4V4Z" stroke="#A855F7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M4 12H20" stroke="#A855F7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <path d="M12 4V20" stroke="#A855F7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-      </svg>
-    )
-  }
-];
 
 interface SideNavigationProps {
   expandedSection: number;
@@ -89,8 +9,6 @@ interface SideNavigationProps {
 }
 
 export default function SideNavigation({ expandedSection, toggleSection }: SideNavigationProps) {
-  const pathname = usePathname();
-
   return (
     <aside className="w-[280px] bg-white">
       <div className="space-y-2">
