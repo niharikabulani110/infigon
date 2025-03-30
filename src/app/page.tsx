@@ -1,18 +1,16 @@
 import Image from "next/image";
-import Navigation from '@/components/Navigation';
 import Link from 'next/link';
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      <Navigation />
       <div className="max-w-7xl mx-auto px-8 bg-white">
         {/* Header Section */}
         <div className="bg-white border-b border-[#E5E7EB]">
           <div className="flex justify-between items-start py-6 bg-white">
             <div className="max-w-[600px] bg-white">
               <h1 className="text-[32px] font-semibold text-[#1A1A1A] mb-3">Your Career Analysis Report</h1>
-              <p className="text-[#666666] text-[17px] leading-[1.6]">Your Report ensures a complete understanding of your strengths, areas for growth, and ideal career fit.</p>
+              <p className="text-[#666666] text-[11px] leading-[1.6]">Your Report ensures a complete understanding of your strengths, areas for growth, and ideal career fit.</p>
             </div>
             
             <div className="bg-white rounded-2xl shadow-[0px_1px_2px_rgba(0,0,0,0.06),0px_1px_3px_rgba(0,0,0,0.1)] p-5">
@@ -74,7 +72,7 @@ export default function Home() {
                 <div className="relative p-4 bg-white rounded-lg shadow-[0px_1px_3px_rgba(0,0,0,0.1)] cursor-pointer">
                   <div className="flex items-center gap-3">
                     <div className="w-6 h-6 flex-shrink-0">
-                      <Image src="/brain-icon.png" alt="Personality" width={24} height={24} />
+                      <Image src="/icons/brain.png" alt="Personality" width={24} height={24} />
                     </div>
                     <div>
                       <div className="text-xs text-[#666666] mb-0.5">TEST 1</div>
@@ -85,10 +83,12 @@ export default function Home() {
                 </div>
                 <div className="mt-3 ml-[52px] space-y-2.5 pb-4">
                   <div className="text-[15px] text-[#1A1A1A] font-medium">Understanding Personality Explorer</div>
-                  <Link href="/personality-types" className="block">
+                  <Link href="/personality-types" prefetch={true} className="block">
                     <div className="text-[15px] text-[#666666] hover:text-[#0046FF]">Personality Types</div>
                   </Link>
-                  <div className="text-[15px] text-[#666666]">Your Result</div>
+                  <Link href="/your-result" prefetch={true} className="block">
+                    <div className="text-[15px] text-[#666666] hover:text-[#0046FF]">Your Result</div>
+                  </Link>
                 </div>
               </div>
 
@@ -170,8 +170,7 @@ export default function Home() {
           <main className="flex-1 bg-white">
             <div className="space-y-6">
               <h2 className="text-[24px] font-semibold">
-                <span className="text-[#1A1A1A]">Understanding</span>{" "}
-                <span className="text-[#0046FF]">Personality Explorer</span>
+                <span className="text-[#0046FF]">Personality Types</span>
               </h2>
               
               <div>

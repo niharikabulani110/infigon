@@ -1,4 +1,3 @@
-import Navigation from '@/components/Navigation';
 import SideNavigation from '../../components/SideNavigation';
 
 export default function PersonalityTestLayout({
@@ -8,14 +7,13 @@ export default function PersonalityTestLayout({
 }) {
   return (
     <div className="min-h-screen bg-white">
-      <Navigation />
       <div className="max-w-7xl mx-auto px-8 bg-white">
         {/* Header Section */}
         <div className="bg-white border-b border-[#E5E7EB]">
           <div className="flex justify-between items-start py-6 bg-white">
             <div className="max-w-[600px] bg-white">
               <h1 className="text-[32px] font-semibold text-[#1A1A1A] mb-3">Your Career Analysis Report</h1>
-              <p className="text-[#666666] text-[17px] leading-[1.6]">Your Report ensures a complete understanding of your strengths, areas for growth, and ideal career fit.</p>
+              <p className="text-[#666666] text-[11px] leading-[1.6]">Your Report ensures a complete understanding of your strengths, areas for growth, and ideal career fit.</p>
             </div>
             
             <div className="bg-white rounded-2xl shadow-[0px_1px_2px_rgba(0,0,0,0.06),0px_1px_3px_rgba(0,0,0,0.1)] p-5">

@@ -2,7 +2,6 @@ export default function UnderstandingPage() {
   return (
     <div className="bg-white">
       <h2 className="text-[24px] font-semibold mb-8 bg-white">
-        <span className="text-[#1A1A1A]">Understanding</span>{" "}
         <span className="text-[#0046FF]">Personality Explorer</span>
       </h2>
 

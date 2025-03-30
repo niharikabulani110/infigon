@@ -95,6 +95,7 @@ export default function SideNavigation() {
             <div key={test.id} className="bg-white">
               <Link 
                 href={test.path}
+                prefetch={true}
                 className={`block p-4 rounded-lg bg-white ${isActive ? 'shadow-[0px_1px_3px_rgba(0,0,0,0.1)]' : ''}`}
               >
                 <div className="flex items-center gap-3">
@@ -111,7 +112,7 @@ export default function SideNavigation() {
                 )}
               </Link>
 
-              {isActive && test.subItems && (
+              {test.subItems && (
                 <div className="mt-2 ml-[52px] space-y-1 bg-white">
                   {test.subItems.map((item, i) => {
                     const isSubItemActive = pathname === item.path;
@@ -119,6 +120,7 @@ export default function SideNavigation() {
                       <Link 
                         key={i}
                         href={item.path}
+                        prefetch={true}
                         className={`block py-2 px-3 rounded-md bg-white ${
                           isSubItemActive 
                             ? "text-[#1F2937] font-medium" 

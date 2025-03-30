@@ -1,27 +1,91 @@
+'use client';
+
 import Image from "next/image";
-import Navigation from '@/components/Navigation';
 import Link from 'next/link';
+import { useState } from 'react';
 
 export default function YourResult() {
+  const [expandedSection, setExpandedSection] = useState(1); // Test 1 expanded by default
+
+  const handleSectionClick = (sectionNumber: number) => {
+    setExpandedSection(expandedSection === sectionNumber ? 0 : sectionNumber);
+  };
+
+  const sections = [
+    {
+      number: 1,
+      title: "Personality Explorer",
+      icon: "/brain-icon.png",
+      color: "#0046FF",
+      links: [
+        { href: "/", text: "Understanding Personality Explorer" },
+        { href: "/personality-types", text: "Personality Types" },
+        { href: "/your-result", text: "Your Result", isActive: true }
+      ]
+    },
+    {
+      number: 2,
+      title: "Interest Explorer",
+      icon: "/interest-icon.png",
+      color: "#22C55E",
+      links: [
+        { href: "/", text: "Understanding Interest Explorer" },
+        { href: "/riasec-model", text: "RIASEC Model" },
+        { href: "/interest-result", text: "Your Result" }
+      ]
+    },
+    {
+      number: 3,
+      title: "Career Motivators",
+      icon: "/career-icon.png",
+      color: "#F59E0B",
+      links: [
+        { href: "/", text: "Understanding Career Motivators" },
+        { href: "/career-motivators", text: "10 Career Motivators" },
+        { href: "/motivator-result", text: "Your Result" }
+      ]
+    },
+    {
+      number: 4,
+      title: "Emotional Intelligence",
+      icon: "/emotional-icon.png",
+      color: "#3B82F6",
+      links: [
+        { href: "/", text: "Understanding Emotional Intelligence" },
+        { href: "/goleman-test", text: "Daniel Goleman Emotional Intelligence Test" },
+        { href: "/emotional-result", text: "Your Result" }
+      ]
+    },
+    {
+      number: 5,
+      title: "Learning Styles",
+      icon: "/learning-icon.png",
+      color: "#A855F7",
+      links: [
+        { href: "/", text: "Understanding Learning Styles" },
+        { href: "/learning-result", text: "Your Result" }
+      ]
+    }
+  ];
+
   return (
     <main className="min-h-screen bg-white">
-      <Navigation />
       <div className="max-w-7xl mx-auto px-8 bg-white">
         {/* Header Section */}
         <div className="bg-white border-b border-[#E5E7EB]">
           <div className="flex justify-between items-start py-6 bg-white">
             <div className="max-w-[600px] bg-white">
               <h1 className="text-[32px] font-semibold text-[#1A1A1A] mb-3">Your Career Analysis Report</h1>
-              <p className="text-[#666666] text-[17px] leading-[1.6]">Your Report ensures a complete understanding of your strengths, areas for growth, and ideal career fit.</p>
+              <p className="text-[#666666] text-[11px] leading-[1.6]">Your Report ensures a complete understanding of your strengths, areas for growth, and ideal career fit.</p>
             </div>
             
             <div className="bg-white rounded-2xl shadow-[0px_1px_2px_rgba(0,0,0,0.06),0px_1px_3px_rgba(0,0,0,0.1)] p-5">
               <div className="flex items-start justify-between bg-white">
                 <div className="bg-white">
                   <h2 className="text-[22px] font-semibold text-[#1A1A1A] mb-1">Want To Speak To An Expert Career Counsellor?</h2>
-                  <p className="text-[15px] text-[#666666]">Explore a list of 1000+ Expert Career Counsellors near you!</p>
+                  <p className="text-[12px] text-[#666666]">Explore a list of 1000+ Expert Career Counsellors near you!</p>
                 </div>
-                <button className="px-3 py-1.5 bg-white text-[15px] font-medium text-[#666666] rounded-lg whitespace-nowrap border border-[#E5E7EB]">
+                <button className="px-3 py-1.5 bg-[#F3F4F6] text-[12px] font-medium text-[#666666] rounded-lg whitespace-nowrap">
                   See All
                 </button>
               </div>
@@ -42,15 +106,15 @@ export default function YourResult() {
               <div className="flex items-center gap-3 ml-6 bg-white">
                 <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#E5E7EB]">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#666666] text-white text-sm">1</span>
-                  <span className="text-[15px] text-[#666666]">Engineer</span>
+                  <span className="text-[12px] text-[#666666]">Engineer</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#E5E7EB]">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#666666] text-white text-sm">2</span>
-                  <span className="text-[15px] text-[#666666]">Doctor</span>
+                  <span className="text-[12px] text-[#666666]">Doctor</span>
                 </div>
                 <div className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#E5E7EB]">
                   <span className="w-5 h-5 flex items-center justify-center rounded-full bg-[#666666] text-white text-sm">3</span>
-                  <span className="text-[15px] text-[#666666]">Teacher</span>
+                  <span className="text-[12px] text-[#666666]">Teacher</span>
                 </div>
               </div>
             </div>
@@ -69,90 +133,45 @@ export default function YourResult() {
           {/* Side Navigation */}
           <aside className="w-[280px] bg-white">
             <div className="space-y-2">
-              {/* Test 1 - Personality Explorer */}
-              <div>
-                <div className="relative p-4 bg-white rounded-lg shadow-[0px_1px_3px_rgba(0,0,0,0.1)] cursor-pointer">
-                  <div className="flex items-center gap-3">
-                    <div className="w-6 h-6 flex-shrink-0">
-                      <Image src="/brain-icon.png" alt="Personality" width={24} height={24} />
+              {sections.map((section) => (
+                <div key={section.number}>
+                  <div
+                    className={`relative p-4 bg-white rounded-lg cursor-pointer ${
+                      expandedSection === section.number
+                        ? `shadow-[0px_1px_3px_rgba(0,0,0,0.1)]`
+                        : 'hover:shadow-[0px_1px_3px_rgba(0,0,0,0.1)]'
+                    }`}
+                    onClick={() => handleSectionClick(section.number)}
+                  >
+                    <div className="flex items-center gap-3">
+                      <div className="w-6 h-6 flex-shrink-0">
+                        <Image src={section.icon} alt={section.title} width={24} height={24} />
+                      </div>
+                      <div>
+                        <div className="text-xs text-[#666666] mb-0.5">TEST {section.number}</div>
+                        <div className={`text-[${section.color}] text-[15px] font-medium`}>{section.title}</div>
+                      </div>
                     </div>
-                    <div>
-                      <div className="text-xs text-[#666666] mb-0.5">TEST 1</div>
-                      <div className="text-[#0046FF] text-[15px] font-medium">Personality Explorer</div>
-                    </div>
+                    {expandedSection === section.number && (
+                      <div className="absolute top-0 right-0 bottom-0 w-1 bg-[${section.color}] rounded-r-lg"></div>
+                    )}
                   </div>
-                  <div className="absolute top-0 right-0 bottom-0 w-1 bg-[#0046FF] rounded-r-lg"></div>
+                  <div className={`mt-3 ml-[52px] space-y-2.5 pb-4 ${expandedSection === section.number ? '' : 'hidden'}`}>
+                    {section.links.map((link, index) => (
+                      <Link key={index} href={link.href} className="block">
+                        <div className={`text-[15px] ${
+                          link.isActive 
+                            ? 'text-[#1A1A1A]' 
+                            : `text-[#666666] hover:text-[${section.color}]`
+                        }`}>
+                          {link.text}
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                  {section.number < 5 && <div className="h-[1px] bg-[#E5E7EB]"></div>}
                 </div>
-                <div className="mt-3 ml-[52px] space-y-2.5 pb-4">
-                  <Link href="/personality-explorer">
-                    <div className="text-[15px] text-[#666666]">Understanding Personality Explorer</div>
-                  </Link>
-                  <Link href="/personality-types">
-                    <div className="text-[15px] text-[#666666]">Personality Types</div>
-                  </Link>
-                  <div className="text-[15px] text-[#1A1A1A]">Your Result</div>
-                </div>
-              </div>
-
-              <div className="h-[1px] bg-[#E5E7EB]"></div>
-
-              {/* Test 2 - Interest Explorer */}
-              <div className="p-4 bg-white rounded-lg cursor-pointer">
-                <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 flex-shrink-0">
-                    <Image src="/interest-icon.png" alt="Interest" width={24} height={24} />
-                  </div>
-                  <div>
-                    <div className="text-xs text-[#666666] mb-0.5">TEST 2</div>
-                    <div className="text-[#22C55E] text-sm font-medium">Interest Explorer</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="h-[1px] bg-[#E5E7EB]"></div>
-
-              {/* Test 3 - Career Motivators */}
-              <div className="p-4 bg-white rounded-lg cursor-pointer">
-                <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 flex-shrink-0">
-                    <Image src="/career-icon.png" alt="Career" width={24} height={24} />
-                  </div>
-                  <div>
-                    <div className="text-xs text-[#666666] mb-0.5">TEST 3</div>
-                    <div className="text-[#F59E0B] text-sm font-medium">Career Motivators</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="h-[1px] bg-[#E5E7EB]"></div>
-
-              {/* Test 4 - Emotional Intelligence */}
-              <div className="p-4 bg-white rounded-lg cursor-pointer">
-                <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 flex-shrink-0">
-                    <Image src="/emotional-icon.png" alt="Emotional" width={24} height={24} />
-                  </div>
-                  <div>
-                    <div className="text-xs text-[#666666] mb-0.5">TEST 4</div>
-                    <div className="text-[#3B82F6] text-sm font-medium">Emotional Intelligence</div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="h-[1px] bg-[#E5E7EB]"></div>
-
-              {/* Test 5 - Learning Styles */}
-              <div className="p-4 bg-white rounded-lg cursor-pointer">
-                <div className="flex items-center gap-3">
-                  <div className="w-6 h-6 flex-shrink-0">
-                    <Image src="/learning-icon.png" alt="Learning" width={24} height={24} />
-                  </div>
-                  <div>
-                    <div className="text-xs text-[#666666] mb-0.5">TEST 5</div>
-                    <div className="text-[#A855F7] text-sm font-medium">Learning Styles</div>
-                  </div>
-                </div>
-              </div>
+              ))}
 
               {/* Download Report Card Button */}
               <div className="mt-4">
@@ -179,26 +198,26 @@ export default function YourResult() {
             {/* Navigation Tabs */}
             <div className="border-b border-[#E5E7EB]">
               <div className="flex items-center">
-                <div className="px-4 py-4 text-[15px] font-medium text-[#1A1A1A] border-b-2 border-[#1A1A1A] -mb-[2px]">
+                <div className="px-4 py-2 text-[12px] font-medium text-[#1A1A1A] border-b-2 border-[#0046FF] -mb-[1px]">
                   Personality
                 </div>
-                <div className="px-4 py-4 text-[15px] text-[#94A3B8]">
+                <div className="px-4 py-2 text-[12px] text-[#666666]">
                   Characterisitics
                 </div>
-                <div className="px-4 py-4 text-[15px] text-[#94A3B8]">
+                <div className="px-4 py-2 text-[12px] text-[#666666]">
                   Strengths/ Weaknesses
                 </div>
-                <div className="px-4 py-4 text-[15px] text-[#94A3B8]">
+                <div className="px-4 py-2 text-[12px] text-[#666666]">
                   Work Style
                 </div>
-                <div className="px-4 py-4 text-[15px] text-[#94A3B8]">
+                <div className="px-4 py-2 text-[12px] text-[#666666]">
                   Preferences
                 </div>
-                <div className="px-4 py-4 text-[15px] text-[#94A3B8]">
+                <div className="px-4 py-2 text-[12px] text-[#666666]">
                   Interpersonal Interaction
                 </div>
-                <div className="px-4 py-4 text-[15px] text-[#94A3B8]">
-                  Work Cul
+                <div className="px-4 py-2 text-[12px] text-[#666666]">
+                  Work Culture
                 </div>
               </div>
             </div>
@@ -206,23 +225,25 @@ export default function YourResult() {
             {/* Result Content */}
             <div className="mt-6">
               {/* Personality Type Card */}
-              <div className="bg-[#F9FAFB] rounded-2xl p-6 flex gap-6">
-                <div className="w-[200px] h-[200px] bg-[#F3F4F6] rounded-2xl flex items-center justify-center">
-                  <Image src="/personality/architect.png" alt="Architect" width={160} height={160} />
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <h2 className="text-[24px] font-semibold text-[#1A1A1A]">Architect</h2>
-                    <div className="text-[#A855F7] font-medium">INTJ Personality</div>
+              <div className="bg-white">
+                <div className="flex gap-6">
+                  <div className="w-[247px] h-[189px] bg-[#F9F7FC] rounded-xl flex items-center justify-center">
+                    <Image src="/personality/purple_uncle.png" alt="Architect" width={247} height={189} />
                   </div>
-                  <div className="flex gap-2 mb-4">
-                    <span className="px-3 py-1 bg-[#F3E8FF] text-[#A855F7] text-sm font-medium rounded-full">STRATEGIC</span>
-                    <span className="px-3 py-1 bg-[#F3E8FF] text-[#A855F7] text-sm font-medium rounded-full">ANALYTICAL</span>
-                    <span className="px-3 py-1 bg-[#F3E8FF] text-[#A855F7] text-sm font-medium rounded-full">INDEPENDENT</span>
+                  <div className="flex-1 pt-2">
+                    <div className="flex items-center gap-2 mb-2">
+                      <h2 className="text-[24px] font-semibold text-[#1A1A1A]">Architect</h2>
+                      <div className="text-[#A855F7] text-[17px]">INTJ Personality</div>
+                    </div>
+                    <div className="flex gap-2 mb-4">
+                      <span className="px-3 py-1 bg-[#F3E8FF] text-[#A855F7] text-[13px] font-medium rounded-full">STRATEGIC</span>
+                      <span className="px-3 py-1 bg-[#F3E8FF] text-[#A855F7] text-[13px] font-medium rounded-full">ANALYTICAL</span>
+                      <span className="px-3 py-1 bg-[#F3E8FF] text-[#A855F7] text-[13px] font-medium rounded-full">INDEPENDENT</span>
+                    </div>
+                    <p className="text-[12px] text-[#666666] leading-[1.6]">
+                      Congratulations on taking the first step for personalized Career Planning & Assessment! We understand the significance of making informed decisions as you navigate your academic journey and future career. We are committed to empowering individuals with the tools and insights needed to confidently navigate the world of careers and education.
+                    </p>
                   </div>
-                  <p className="text-[15px] text-[#666666] leading-[1.6]">
-                    Congratulations on taking the first step for personalized Career Planning & Assessment! We understand the significance of making informed decisions as you navigate your academic journey and future career. We are committed to empowering individuals with the tools and insights needed to confidently navigate the world of careers and education.
-                  </p>
                 </div>
               </div>
             </div>

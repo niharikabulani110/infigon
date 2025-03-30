@@ -1,18 +1,16 @@
 import Image from "next/image";
-import Navigation from '@/components/Navigation';
 import Link from 'next/link';
 
 export default function PersonalityTypes() {
   return (
     <main className="min-h-screen bg-white">
-      <Navigation />
       <div className="max-w-7xl mx-auto px-8 bg-white">
         {/* Header Section */}
         <div className="bg-white border-b border-[#E5E7EB]">
           <div className="flex justify-between items-start py-6 bg-white">
             <div className="max-w-[600px] bg-white">
               <h1 className="text-[32px] font-semibold text-[#1A1A1A] mb-3">Your Career Analysis Report</h1>
-              <p className="text-[#666666] text-[17px] leading-[1.6]">Your Report ensures a complete understanding of your strengths, areas for growth, and ideal career fit.</p>
+              <p className="text-[#666666] text-[11px] leading-[1.6]">Your Report ensures a complete understanding of your strengths, areas for growth, and ideal career fit.</p>
             </div>
             
             <div className="bg-white rounded-2xl shadow-[0px_1px_2px_rgba(0,0,0,0.06),0px_1px_3px_rgba(0,0,0,0.1)] p-5">
@@ -84,11 +82,11 @@ export default function PersonalityTypes() {
                   <div className="absolute top-0 right-0 bottom-0 w-1 bg-[#0046FF] rounded-r-lg"></div>
                 </div>
                 <div className="mt-3 ml-[52px] space-y-2.5 pb-4">
-                  <div className="text-[15px] text-[#666666]">Understanding Personality Explorer</div>
-                  <Link href="/personality-types" className="block">
-                    <div className="text-[15px] text-[#1A1A1A]">Personality Types</div>
+                  <Link href="/">
+                    <div className="text-[15px] text-[#666666]">Understanding Personality Explorer</div>
                   </Link>
-                  <Link href="/your-result" className="block">
+                  <div className="text-[15px] text-[#1A1A1A]">Personality Types</div>
+                  <Link href="/your-result">
                     <div className="text-[15px] text-[#666666]">Your Result</div>
                   </Link>
                 </div>
@@ -172,7 +170,6 @@ export default function PersonalityTypes() {
           <main className="flex-1 bg-white">
             <div className="space-y-6">
               <h2 className="text-[24px] font-semibold">
-                <span className="text-[#1A1A1A]">Understanding</span>{" "}
                 <span className="text-[#0046FF]">Personality Types</span>
               </h2>
               
@@ -180,8 +177,8 @@ export default function PersonalityTypes() {
               <div className="grid grid-cols-4 gap-6">
                 {/* Row 1 */}
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/inspector.png" alt="Inspector" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Inspector" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -193,8 +190,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/protector.png" alt="Protector" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Protector" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -206,8 +203,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/artist.png" alt="Artist" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Artist" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -219,8 +216,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/consul.png" alt="Consul" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Consul" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -233,8 +230,8 @@ export default function PersonalityTypes() {
 
                 {/* Row 2 */}
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/virtuoso.png" alt="Virtuoso" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Virtuoso" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -246,8 +243,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/entrepreneur.png" alt="Entrepreneur" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Entrepreneur" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -259,8 +256,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/entertainer.png" alt="Entertainer" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Entertainer" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -272,8 +269,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/executive.png" alt="Executive" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Executive" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -286,8 +283,8 @@ export default function PersonalityTypes() {
 
                 {/* Row 3 */}
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/advocate.png" alt="Advocate" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Advocate" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -299,8 +296,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/mediator.png" alt="Mediator" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Mediator" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -312,8 +309,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/campaigner.png" alt="Campaigner" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Campaigner" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -325,8 +322,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/protagonist.png" alt="Protagonist" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Protagonist" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -339,8 +336,8 @@ export default function PersonalityTypes() {
 
                 {/* Row 4 */}
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/architect.png" alt="Architect" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Architect" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -352,8 +349,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/thinker.png" alt="Thinker" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Thinker" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -365,8 +362,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/debater.png" alt="Debater" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Debater" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
@@ -378,8 +375,8 @@ export default function PersonalityTypes() {
                 </div>
 
                 <div className="bg-white rounded-2xl overflow-hidden">
-                  <div className="aspect-[2/1] flex items-center justify-center">
-                    <Image src="/personality/commander.png" alt="Commander" width={80} height={80} className="mx-auto" />
+                  <div className="aspect-[243/98] bg-[#ECF5FF] flex items-center justify-center">
+                    <Image src="/personality/personaloity.png" alt="Commander" width={243} height={98} className="mx-auto" />
                   </div>
                   <div className="p-4">
                     <div className="flex items-center justify-between mb-2">
