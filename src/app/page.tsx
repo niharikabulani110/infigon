@@ -14,13 +14,13 @@ export default function Home() {
               <p className="text-[#666666] text-[17px] leading-[1.6]">Your Report ensures a complete understanding of your strengths, areas for growth, and ideal career fit.</p>
             </div>
             
-            <div className="bg-white rounded-2xl shadow-[0px_1px_2px_rgba(0,0,0,0.06),0px_1px_3px_rgba(0,0,0,0.1)] p-4">
-              <div className="flex items-start justify-between gap-4">
+            <div className="bg-white rounded-2xl shadow-[0px_1px_2px_rgba(0,0,0,0.06),0px_1px_3px_rgba(0,0,0,0.1)] p-5">
+              <div className="flex items-start justify-between">
                 <div>
-                  <h2 className="text-[20px] font-semibold text-[#1A1A1A]">Want To Speak To An Expert Career Counsellor?</h2>
-                  <p className="mt-1 text-[15px] text-[#666666]">Explore a list of 1000+ Expert Career Counsellors near you!</p>
+                  <h2 className="text-[22px] font-semibold text-[#1A1A1A] mb-1">Want To Speak To An Expert Career Counsellor?</h2>
+                  <p className="text-[15px] text-[#666666]">Explore a list of 1000+ Expert Career Counsellors near you!</p>
                 </div>
-                <button className="px-3 py-1.5 bg-[#F3F4F6] text-[15px] font-medium text-[#666666] rounded-lg">
+                <button className="px-3 py-1.5 bg-[#F3F4F6] text-[15px] font-medium text-[#666666] rounded-lg whitespace-nowrap">
                   See All
                 </button>
               </div>
@@ -258,6 +258,64 @@ export default function Home() {
                       <div className="text-[13px] text-[#666666] mt-1">Prefers flexible, spontaneous approaches and adaptability</div>
                     </div>
                   </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-[17px] font-semibold text-[#0046FF] mb-6">Purpose, Applications, and Benefits of MBTI in Career Development</h3>
+                <div className="grid grid-cols-3 gap-4">
+                  {/* Row 1 */}
+                  <div className="bg-[#F3F4F6] rounded-xl p-4">
+                    <h4 className="text-[15px] font-medium text-[#1A1A1A] mb-2">Self Awareness</h4>
+                    <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
+                  </div>
+                  <div className="bg-[#F3F4F6] rounded-xl p-4">
+                    <h4 className="text-[15px] font-medium text-[#1A1A1A] mb-2">Leadership Development</h4>
+                    <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
+                  </div>
+                  <div className="bg-[#F3F4F6] rounded-xl p-4">
+                    <h4 className="text-[15px] font-medium text-[#1A1A1A] mb-2">Career Alignment</h4>
+                    <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
+                  </div>
+
+                  {/* Row 2 */}
+                  <div className="bg-[#F3F4F6] rounded-xl p-4">
+                    <h4 className="text-[15px] font-medium text-[#1A1A1A] mb-2">Career Planning</h4>
+                    <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
+                  </div>
+                  <div className="bg-[#F3F4F6] rounded-xl p-4">
+                    <h4 className="text-[15px] font-medium text-[#1A1A1A] mb-2">Team Building</h4>
+                    <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
+                  </div>
+                  <div className="bg-[#F3F4F6] rounded-xl p-4">
+                    <h4 className="text-[15px] font-medium text-[#1A1A1A] mb-2">Conflict Resolution</h4>
+                    <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
+                  </div>
+
+                  {/* Row 3 */}
+                  <div className="bg-[#F3F4F6] rounded-xl p-4">
+                    <h4 className="text-[15px] font-medium text-[#1A1A1A] mb-2">Improved Communication</h4>
+                    <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
+                  </div>
+                  <div className="bg-[#F3F4F6] rounded-xl p-4">
+                    <h4 className="text-[15px] font-medium text-[#1A1A1A] mb-2">Strength Identification</h4>
+                    <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
+                  </div>
+                  <div className="bg-[#F3F4F6] rounded-xl p-4">
+                    <h4 className="text-[15px] font-medium text-[#1A1A1A] mb-2">Personal Growth</h4>
+                    <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Footer Links */}
+              <div className="mt-8 text-center">
+                <div className="text-[13px] text-[#666666]">
+                  <a href="#" className="hover:underline">Privacy Policy</a>
+                  <span className="mx-2">•</span>
+                  <a href="#" className="hover:underline">Terms & Conditions</a>
+                  <span className="mx-2">•</span>
+                  <a href="#" className="hover:underline">Support</a>
                 </div>
               </div>
             </div>
