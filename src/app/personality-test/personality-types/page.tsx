@@ -55,6 +55,11 @@ const personalityTypes = [
   }
 ];
 
+/**
+ * Personality Types Page Component
+ * Displays a grid of personality types with their descriptions and images
+ * @returns {JSX.Element} The rendered personality types page
+ */
 export default function PersonalityTypesPage() {
   return (
     <div className="p-6 bg-white">
@@ -63,13 +68,16 @@ export default function PersonalityTypesPage() {
       </h2>
 
       {/* Personality Types Grid */}
-      <div className="grid grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {personalityTypes.map((type, index) => (
-          <div key={index} className="bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden">
+          <div 
+            key={index} 
+            className="bg-white rounded-2xl border border-[#E5E7EB] overflow-hidden hover:shadow-md transition-shadow duration-200"
+          >
             <div className="aspect-[2/1] flex items-center justify-center bg-[#F3F4F6]">
               <Image
                 src={type.image}
-                alt={type.name}
+                alt={`${type.name} personality type illustration`}
                 width={80}
                 height={80}
                 className="mx-auto"
