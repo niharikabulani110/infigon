@@ -88,7 +88,9 @@ export default function PersonalityTypes() {
                   <Link href="/personality-types" className="block">
                     <div className="text-[15px] text-[#1A1A1A]">Personality Types</div>
                   </Link>
-                  <div className="text-[15px] text-[#666666]">Your Result</div>
+                  <Link href="/your-result" className="block">
+                    <div className="text-[15px] text-[#666666]">Your Result</div>
+                  </Link>
                 </div>
               </div>
 
