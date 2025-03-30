@@ -175,185 +175,217 @@ export default function PersonalityTypes() {
               </h2>
               
               {/* Personality Types Grid */}
-              <div className="grid grid-cols-4 gap-4">
+              <div className="grid grid-cols-4 gap-6">
                 {/* Row 1 */}
-                <div className="bg-[#F0F7FF] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/inspector.png" alt="Inspector" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/inspector.png" alt="Inspector" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Inspector</h3>
-                    <span className="text-[13px] text-[#666666]">(ISTJ)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Inspector</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ISTJ</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#F0F7FF] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/protector.png" alt="Protector" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/protector.png" alt="Protector" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Protector</h3>
-                    <span className="text-[13px] text-[#666666]">(ISFJ)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Protector</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ISFJ</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#F0F7FF] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/artist.png" alt="Artist" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/artist.png" alt="Artist" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Artist</h3>
-                    <span className="text-[13px] text-[#666666]">(ISFP)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Artist</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ISFP</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#F0F7FF] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/consul.png" alt="Consul" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/consul.png" alt="Consul" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Consul</h3>
-                    <span className="text-[13px] text-[#666666]">(ESFJ)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Consul</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ESFJ</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
                 {/* Row 2 */}
-                <div className="bg-[#FFF7E6] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/virtuoso.png" alt="Virtuoso" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/virtuoso.png" alt="Virtuoso" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Virtuoso</h3>
-                    <span className="text-[13px] text-[#666666]">(ISTP)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Virtuoso</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ISTP</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#FFF7E6] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/entrepreneur.png" alt="Entrepreneur" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/entrepreneur.png" alt="Entrepreneur" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Entrepreneur</h3>
-                    <span className="text-[13px] text-[#666666]">(ESTP)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Entrepreneur</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ESTP</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#FFF7E6] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/entertainer.png" alt="Entertainer" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/entertainer.png" alt="Entertainer" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Entertainer</h3>
-                    <span className="text-[13px] text-[#666666]">(ESFP)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Entertainer</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ESFP</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#FFF7E6] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/executive.png" alt="Executive" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/executive.png" alt="Executive" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Executive</h3>
-                    <span className="text-[13px] text-[#666666]">(ESTJ)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Executive</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ESTJ</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
                 {/* Row 3 */}
-                <div className="bg-[#F0FFF4] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/advocate.png" alt="Advocate" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/advocate.png" alt="Advocate" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Advocate</h3>
-                    <span className="text-[13px] text-[#666666]">(INFJ)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Advocate</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">INFJ</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#F0FFF4] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/mediator.png" alt="Mediator" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/mediator.png" alt="Mediator" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Mediator</h3>
-                    <span className="text-[13px] text-[#666666]">(INFP)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Mediator</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">INFP</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#F0FFF4] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/campaigner.png" alt="Campaigner" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/campaigner.png" alt="Campaigner" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Campaigner</h3>
-                    <span className="text-[13px] text-[#666666]">(ENFP)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Campaigner</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ENFP</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#F0FFF4] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/protagonist.png" alt="Protagonist" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/protagonist.png" alt="Protagonist" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Protagonist</h3>
-                    <span className="text-[13px] text-[#666666]">(ENFJ)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Protagonist</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ENFJ</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
                 {/* Row 4 */}
-                <div className="bg-[#FAF5FF] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/architect.png" alt="Architect" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/architect.png" alt="Architect" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Architect</h3>
-                    <span className="text-[13px] text-[#666666]">(INTJ)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Architect</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">INTJ</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#FAF5FF] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/thinker.png" alt="Thinker" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/thinker.png" alt="Thinker" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Thinker</h3>
-                    <span className="text-[13px] text-[#666666]">(INTP)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Thinker</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">INTP</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#FAF5FF] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/debater.png" alt="Debater" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/debater.png" alt="Debater" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Debater</h3>
-                    <span className="text-[13px] text-[#666666]">(ENTP)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Debater</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ENTP</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
 
-                <div className="bg-[#FAF5FF] rounded-lg p-4">
-                  <div className="mb-3">
-                    <Image src="/personality/commander.png" alt="Commander" width={80} height={80} />
+                <div className="bg-white rounded-2xl overflow-hidden">
+                  <div className="aspect-[2/1] flex items-center justify-center">
+                    <Image src="/personality/commander.png" alt="Commander" width={80} height={80} className="mx-auto" />
                   </div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <h3 className="text-[15px] font-medium text-[#1A1A1A]">Commander</h3>
-                    <span className="text-[13px] text-[#666666]">(ENTJ)</span>
+                  <div className="p-4">
+                    <div className="flex items-center justify-between mb-2">
+                      <h3 className="text-[15px] font-medium text-[#1A1A1A]">Commander</h3>
+                      <span className="text-[13px] text-[#666666] bg-[#EBF5FF] px-2 py-0.5 rounded">ENTJ</span>
+                    </div>
+                    <p className="text-[13px] text-[#666666] leading-[1.4]">Focuses on concrete, tangible information and present realities</p>
                   </div>
-                  <p className="text-[13px] text-[#666666] leading-[1.6]">Focuses on concrete, tangible information and present realities tangible information and present realities</p>
                 </div>
               </div>
             </div>
