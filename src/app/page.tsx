@@ -72,7 +72,7 @@ export default function Home() {
                 <div className="relative p-4 bg-white rounded-lg shadow-[0px_1px_3px_rgba(0,0,0,0.1)] cursor-pointer">
                   <div className="flex items-center gap-3">
                     <div className="w-6 h-6 flex-shrink-0">
-                      <Image src="/icons/brain.png" alt="Personality" width={24} height={24} />
+                      <Image src="/images/icons/brain.png" alt="Personality" width={24} height={24} />
                     </div>
                     <div>
                       <div className="text-xs text-[#666666] mb-0.5">TEST 1</div>
@@ -98,7 +98,7 @@ export default function Home() {
               <div className="p-4 bg-white rounded-lg cursor-pointer">
                 <div className="flex items-center gap-3">
                   <div className="w-6 h-6 flex-shrink-0">
-                    <Image src="/interest-icon.png" alt="Interest" width={24} height={24} />
+                    <Image src="/images/icons/interest.png" alt="Interest" width={24} height={24} />
                   </div>
                   <div>
                     <div className="text-xs text-[#666666] mb-0.5">TEST 2</div>
